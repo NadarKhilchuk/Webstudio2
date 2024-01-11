@@ -62,6 +62,7 @@ height: 12px;
 
 
 .header-home-info-number {
+  display: flex;
   color: #757575;
   font-size: 14px;
   font-style: normal;
@@ -840,7 +841,6 @@ letter-spacing: 0.42px;
   height: 20px;
 }
 .footer-portfolio-logotyp-link {
-  padding: 12px;
 fill: #fff;
 border-radius: 50%;
 transition: all 0.3s ease 0s;
