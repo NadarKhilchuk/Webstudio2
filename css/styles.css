@@ -842,6 +842,7 @@ letter-spacing: 0.42px;
   height: 20px;
 }
 .footer-portfolio-logotyp-link {
+  padding: 12px;
 fill: #fff;
 border-radius: 50%;
 transition: all 0.3s ease 0s;
@@ -854,3 +855,4 @@ background-color: rgba(255, 255, 255, 0.10);
 .footer-portfolio-logotyp-link:hover {
   background-color: #2196F3;
 }
+
