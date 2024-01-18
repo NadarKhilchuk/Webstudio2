@@ -32,20 +32,21 @@
 </nav>
 <ul class="header-home-information">
 <li class="header-home-info-item">
-  <a class="header-home-info" href="mailto:example@mail.ua">
+  <a class="header-home-info" href="#" data-modal-open>
     <svg>
       <use href="./img/envelope.svg#logo-envelope"></use>
     </svg>
     info@devstudio.com</a>
 </li>
 <li class="header-home-info-item">
-  <a class="header-home-info-number" href="tel:+380961111111">
+  <a class="header-home-info-number" href="tel:+380961111111" data-modal-open>
     <svg>
       <use href="./img/smartphone.svg#logo-smartphone"></use>
     </svg>
     +38 096 111 11 11</a>
 </li>
     </ul>
+  </div>
   </header>
   <main class="page page-home">
     <section class="page-home-hero hero-home">
@@ -363,6 +364,65 @@
         </div>
       </section>
     </main>
+
+
+
+
+    <section class="page-home-form form-home">
+      <div class="form-home-container container">
+          <button class="form-home-button-open" data-modal-open>Open modal</button>
+          <div class="form-home-backdrop is-hidden" is-hidden data-modal>
+          <div class="form-home-modal">
+              <div class="form-home-header">
+                    <h5 class="form-home-title">Reach out to us!</h5>
+                    <button class="form-home-button-close" data-modal-close>
+                      &times
+                  </button>
+                  </div>
+              <form  class="form-home-form">
+                  <div class="form-home-inputs">
+                      <input 
+                      required
+                      type="text"
+                      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                      title="Username must be two words separated by space."
+                      class="form-home-input"
+                      placeholder="Your name*">
+
+                      <input
+
+                      required 
+                      type="password"
+                      minlength="6"
+                      maxlength="12"
+                      pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
+                      title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                      class="form-home-input"
+                      placeholder="Your e-mail*">
+
+                      <textarea
+                       class="form-home-textarea" 
+                       placeholder="Your message*">
+                  </textarea>
+                  </div>
+                  <!-- disabled це атрыбут до button-->
+                  <button 
+                  
+                  type="submit" class="form-home-button">
+                      Send message
+                  </button>
+              </form>
+          </div>
+      </div>
+      </div>
+   </section>
+
+
+
+
+
+
+
     <footer class="footer footer-home">
       <div class="footer-home-container container">
         <div class="footer-home-left">
@@ -410,6 +470,7 @@
         </div>
         </div>
             </footer>
+            <script src="./js/modals.js"></script>
         </body>
         </html>
        
