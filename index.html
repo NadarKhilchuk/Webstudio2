@@ -32,14 +32,14 @@
 </nav>
 <ul class="header-home-information">
 <li class="header-home-info-item">
-  <a class="header-home-info" href="#" data-modal-open>
+  <a class="header-home-info" href="#" >
     <svg>
       <use href="./img/envelope.svg#logo-envelope"></use>
     </svg>
     info@devstudio.com</a>
 </li>
 <li class="header-home-info-item">
-  <a class="header-home-info-number" href="tel:+380961111111" data-modal-open>
+  <a class="header-home-info-number" href="tel:+380961111111">
     <svg>
       <use href="./img/smartphone.svg#logo-smartphone"></use>
     </svg>
@@ -56,7 +56,74 @@
          <br>ВАШОГО БІЗНЕСУ</p>
         </h1>
       </div>
-            <button class="hero-home-button">Замовити послугу</button>
+            <button class="hero-home-button" data-modal-open>Замовити послугу</button>
+            <div class="form-home-backdrop is-hidden" is-hidden data-modal>
+            <div class="form-home-modal">
+                <div class="form-home-header">
+                  <button class="form-home-button-close" data-modal-close>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="15" cy="15" r="15" fill="white"/>
+                      <circle cx="15" cy="15" r="14.5" stroke="black" stroke-opacity="0.1"/>
+                      <path d="M21 11.1079L19.8921 10L15.5 14.3921L11.1079 10L10 11.1079L14.3921 15.5L10 19.8921L11.1079 21L15.5 16.6079L19.8921 21L21 19.8921L16.6079 15.5L21 11.1079Z" fill="#2196F3"/>
+                      </svg>
+                </button>
+                      <h5 class="form-home-title">Залиште свої дані, ми вам передзвонимо</h5>
+                    </div>
+
+                <form  class="form-home-form">
+                    <div class="form-home-inputs">
+
+                      <p class="form-home-description">Ім'я</p>
+                     
+                        <input 
+                        required
+                        type="text"
+                        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                        title="Username must be two words separated by space."
+                        class="form-home-input"
+                        placeholder="Your name">
+                    
+
+
+                        <p class="form-home-description">Телефон</p>
+                        <input
+                        type="number"
+                        minlength="6"
+                        maxlength="12"
+                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
+                        title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                        class="form-home-input"
+                        placeholder="Your number">
+                      
+
+                        <p class="form-home-description">Пошта</p>
+                        <input
+                        required 
+                        type="email"
+                        minlength="6"
+                        maxlength="12"
+                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
+                        title="Please include at least 1 uppercase character, 1 lowercase character."
+                        class="form-home-input"
+                        placeholder="Your e-mail">
+
+                        <p class="form-home-description">Коментар</p>
+                        <input
+                         class="form-home-textarea" 
+                         required 
+                         placeholder="Введіть текст">
+
+                    </input>
+                    </div>
+                    <div class="form-home-submit">
+                    <button 
+                    type="submit" class="form-home-button">
+                        Відправити
+                    </button>
+                  </div>
+                </form>
+            </div>
+        </div>
           </div>
         </section>
         <section class="page-home-advantages advantages-home">
@@ -100,13 +167,22 @@
           <h2 class="overlord-home-title-h2">Чим ми займаємося</h2>
              <ul class="overlord-home-list">
                 <li class="overlord-home-item">
-                <img class="overlord-home-photo1" src="./img/computer1.png" alt="computer" width="370" height="294"> 
+                <img class="overlord-home-photo" src="./img/computer1.png" alt="computer" width="370" height="294"> 
+                <div class="overlord-home-overlay">
+                <p class="overlord-home-text">Десктопні додатки</p>
+              </div>
               </li>
               <li class="overlord-home-item">
-                 <img class="overlord-home-photo2" src="./img/computer2.png" alt="comp" width="370" height="294">
+                 <img class="overlord-home-photo" src="./img/computer2.png" alt="comp" width="370" height="294">
+                 <div class="overlord-home-overlay">
+                 <p class="overlord-home-text">Мобільні додатки</p>
+                </div>
                 </li>
                  <li class="overlord-home-item">
-               <img class="overlord-home-photo3" src="./img/computer3.png" alt="comput" width="370" height="294">
+               <img class="overlord-home-photo" src="./img/computer3.png" alt="comput" width="370" height="294">
+               <div class="overlord-home-overlay">
+               <p class="overlord-home-text">Дизайнерські рішення</p>
+              </div>
               </li>
               </ul>
             </section>
@@ -364,65 +440,6 @@
         </div>
       </section>
     </main>
-
-
-
-
-    <section class="page-home-form form-home">
-      <div class="form-home-container container">
-          <button class="form-home-button-open" data-modal-open>Open modal</button>
-          <div class="form-home-backdrop is-hidden" is-hidden data-modal>
-          <div class="form-home-modal">
-              <div class="form-home-header">
-                    <h5 class="form-home-title">Reach out to us!</h5>
-                    <button class="form-home-button-close" data-modal-close>
-                      &times
-                  </button>
-                  </div>
-              <form  class="form-home-form">
-                  <div class="form-home-inputs">
-                      <input 
-                      required
-                      type="text"
-                      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-                      title="Username must be two words separated by space."
-                      class="form-home-input"
-                      placeholder="Your name*">
-
-                      <input
-
-                      required 
-                      type="password"
-                      minlength="6"
-                      maxlength="12"
-                      pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
-                      title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
-                      class="form-home-input"
-                      placeholder="Your e-mail*">
-
-                      <textarea
-                       class="form-home-textarea" 
-                       placeholder="Your message*">
-                  </textarea>
-                  </div>
-                  <!-- disabled це атрыбут до button-->
-                  <button 
-                  
-                  type="submit" class="form-home-button">
-                      Send message
-                  </button>
-              </form>
-          </div>
-      </div>
-      </div>
-   </section>
-
-
-
-
-
-
-
     <footer class="footer footer-home">
       <div class="footer-home-container container">
         <div class="footer-home-left">
