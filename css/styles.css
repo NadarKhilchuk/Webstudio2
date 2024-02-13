@@ -946,6 +946,69 @@ background-color: rgba(255, 255, 255, 0.10);
   background-color: #2196F3;
 }
 
+.footer-portfolio-right{
+  flex-direction: column;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: nowrap;
+padding-left: 80px;
+}
+.footer-portfolio-title-h6{
+padding-right: 350px;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+padding-bottom: 20px;
+}
+.footer-portfolio-input{
+  color: rgba(255, 255, 255, 0.60);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: rgba(33, 150, 243, 0.00);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.48px;
+}
+
+
+.footer-portfolio-button{
+  border-radius: 4px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  margin-left: 12px;
+}
+
+.footer-portfolio-button-img{
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-left: 10px;
+  margin-top: 3px;
+}
 
 
 
@@ -954,7 +1017,7 @@ background-color: rgba(255, 255, 255, 0.10);
 
 
 
-
+/*!modal form  */
 .form-home-button-open {
 	font-size: 24px;
 	background-color: orange;
@@ -1215,4 +1278,70 @@ margin-top: 20px;
   padding-left: 42px;
   background-size: 18px 18px;
   background-position: 12px 11px;
+}
+
+
+
+
+
+
+.titan-portfolio-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 300px;
+  flex-shrink: 0;
+  background: rgba(33, 150, 243, 0.90);
+  transition: transform 250ms ease-in-out;
+  transform: translateY(150%);
+  display: flex;
+  justify-content: center;
+  padding-top:65px;
+}  
+
+.titan-portfolio-overlay-block{
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.titan-portfolio-overlay-text{
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.54px;
+  width: 322px;
+}
+
+
+
+
+.titan-portfolio-item:hover{
+  border: 1px solid #EEE;
+background: #FFF;
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+width: 370px;
+height: 405px;
+}
+
+
+
+.titan-portfolio-item:hover .titan-portfolio-overlay{
+  transform: translateY(0);
+  padding-bottom: 10px;
+} 
+
+
+.titan-portfolio-title-h4{
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.54px;
+  width: 322px;
 }
