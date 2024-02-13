@@ -61,67 +61,43 @@
             <div class="form-home-modal">
                 <div class="form-home-header">
                   <button class="form-home-button-close" data-modal-close>
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="15" cy="15" r="15" fill="white"/>
-                      <circle cx="15" cy="15" r="14.5" stroke="black" stroke-opacity="0.1"/>
-                      <path d="M21 11.1079L19.8921 10L15.5 14.3921L11.1079 10L10 11.1079L14.3921 15.5L10 19.8921L11.1079 21L15.5 16.6079L19.8921 21L21 19.8921L16.6079 15.5L21 11.1079Z" fill="#2196F3"/>
-                      </svg>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z" fill="black" />
+                    </svg>
                 </button>
                       <h5 class="form-home-title">Залиште свої дані, ми вам передзвонимо</h5>
                     </div>
 
+
+
                 <form  class="form-home-form">
-                    <div class="form-home-inputs">
-
-                      <p class="form-home-description">Ім'я</p>
-                     
-                        <input 
-                        required
-                        type="text"
-                        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-                        title="Username must be two words separated by space."
-                        class="form-home-input"
-                        placeholder="Your name">
-                    
-
-
-                        <p class="form-home-description">Телефон</p>
-                        <input
-                        type="number"
-                        minlength="6"
-                        maxlength="12"
-                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
-                        title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
-                        class="form-home-input"
-                        placeholder="Your number">
+                  <ul class="modal-home-list">
+                    <li class="modal-home-item name-item">
+                      <h6 class="modal-home-title-sidebar ">Ім'я</h6>
+                      <input type="text" class="modal-home-input-data name-img">
+                    </li>
+                    <li class="modal-home-item number-item">
+                      <h6 class="modal-home-title-sidebar">Телефон</h6>
+                      <input type="text" class="modal-home-input-data number-img">
                       
-
-                        <p class="form-home-description">Пошта</p>
-                        <input
-                        required 
-                        type="email"
-                        minlength="6"
-                        maxlength="12"
-                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
-                        title="Please include at least 1 uppercase character, 1 lowercase character."
-                        class="form-home-input"
-                        placeholder="Your e-mail">
-
-                        <p class="form-home-description">Коментар</p>
-                        <input
-                         class="form-home-textarea" 
-                         required 
-                         placeholder="Введіть текст">
-
-                    </input>
-                    </div>
-                    <div class="form-home-submit">
-                    <button 
-                    type="submit" class="form-home-button">
-                        Відправити
-                    </button>
+                    </li>
+                    <li class="modal-home-item mail-item">
+                      <h6 class="modal-home-title-sidebar ">Пошта</h6>
+                      <input type="text" class="modal-home-input-data mail-img">
+                    </li>
+                    <li class="modal-home-item comment-item">
+                      <h6 class="modal-home-title-sidebar ">Коментар</h6>
+                      <input type="text" class="modal-home-input-comment" placeholder="Введіть текст">
+                    </li>
+                  </ul>
+                  <div class="modal-home-block-sending">
+                    <input type="checkbox" class="modal-home-check">
+                    <h3 class="modal-home-title-agreement">Погоджуюся з розсилкою та приймаю <span><a class="modal-home-link" href="#">Умови договору</a></h3></span>
+                    <button  class="modal-home-button">Відправити</button>								
                   </div>
                 </form>
+
+
             </div>
         </div>
           </div>
@@ -485,7 +461,14 @@
             </li>
           </ul>
         </div>
+        <div class="footer-home-right"> 
+          <h6 class="footer-home-title-h6">Підпишіться на розсилку</h6>
+          <div class="footer-home-right-block">
+            <input type="text" class="footer-home-input" placeholder="E-mail">
+            <button class="footer-home-button">Підписатися<img class="footer-home-button-img" src="./img/symbol-tg.svg" alt=""></button>
+          </div>
         </div>
+      </div>
             </footer>
             <script src="./js/modals.js"></script>
         </body>
